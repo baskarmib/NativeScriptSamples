@@ -1,0 +1,11 @@
+<Page loaded="pageLoaded" class="page" xmlns="http://www.nativescript.org/tns.xsd">
+	<ActionBar title="Camera" class="action-bar">
+	</ActionBar>
+	<StackLayout>
+		<Button text="Take a Picture! 📷" class="btn btn-primary" marginTop="20" tap="{{ takePicture }}"></Button>
+		<TextField value="{{result}}"></TextField>
+		<Label tap="{{result}}" />
+		<Button text="Here go the picture desc"></Button>
+	</StackLayout>
+</Page>
+ 
