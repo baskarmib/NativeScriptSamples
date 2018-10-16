@@ -1,4 +1,4 @@
-# NativeScript JavaScript Template
+
 This sample uses NativeScript http plugin to send email to SendGrid.
 
 SendGrid Url - https://api.sendgrid.com/v3/mail/send
