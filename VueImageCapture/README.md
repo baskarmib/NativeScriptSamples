@@ -1,4 +1,4 @@
-# NativeScript JavaScript Template
+# NativeScript Vue Sample
 
 This project uses nativescript-camera plugin with Vue.
 
