@@ -1,25 +1,28 @@
-# NativeScript JavaScript Template
+# NativeScript Vue Sample
 
-This template creates a "Hello, world" NativeScript app using JavaScript.
+This project uses nativescript-camera plugin with Vue.
 
-This is the default template, so you can create a new app that uses it with the `--template` option:
+In order to use the sample, install the required nativescript-vue cli tools. After installing nativescript-vue cli use the below commands to build the sample.
 
-```
-tns create my-app-name --template tns-template-hello-world
-```
+tns build android --bundle
 
-Or without it:
+To debug the sample , run the below command to get the chrome debugger tools url.
 
-```
-tns create my-app-name
-```
+tns debug android --bundle
 
-> Note: Both commands will create a new NativeScript app that uses the latest version of this template published to [npm] (https://www.npmjs.com/package/tns-template-hello-world).
+To run with out debugging, run the below command
 
-If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
+tns run android --bundle
 
-```
-tns create my-app-name --template https://github.com/NativeScript/template-hello-world.git#master
-```
+I have tested the sample using  Android Emulator which is of version 7.1 (Nougat) - API 25 and emulator version - 27.3.10-4969155
 
-**NB:** Please, have in mind that the master branch may refer to dependencies that are not on NPM yet!
+The sample uses http module and axios module to post json request with Image as Base64String to an API. I have created an Azure Function API which accepts the JSON request and returns the same content.
+
+When using axios, we need to always pass the data in the form of string.
+data: { ImageContent: this.pictureBase64String.toString() }
+
+Axios will not post request if the content is not sent as string.
+
+You can also test the sample using IOS, if you have IOS Device.
+
+
