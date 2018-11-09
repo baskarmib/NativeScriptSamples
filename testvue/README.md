@@ -8,6 +8,8 @@ Execute the following command to create an app from this template:
 tns create my-blank-vue --template tns-template-blank-vue
 ```
 
+One using above command we get GridLayout in Home Vue. I have edited the sample to use stack layout.
+
 > Note: This command will create a new NativeScript app that uses the latest version of this template published to [npm](https://www.npmjs.com/package/tns-template-blank-vue).
 
 If you want to create a new app that uses the source of the template from the `master` branch, you can execute the following:
@@ -26,7 +28,7 @@ There is a single blank component located in:
 
 **Home** page has the following components:
 - `ActionBar` - It holds the title of the page.
-- `GridLayout` - The main page layout that should contains all the page content.
+- `StackLayout` - The main page layout that should contains all the page content.
 
 ## Get Help
 The NativeScript framework has a vibrant community that can help when you run into problems.
